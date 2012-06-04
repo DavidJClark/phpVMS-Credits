@@ -28,6 +28,6 @@ Install Manually:
 -Unzip the package and place the files as structured in your root phpVMS install.
 -Use the credits.sql file to create the tables needed in your sql database using phpmyadmin or similar.
 
--Create a link on your site for your pilots to access their AIRMail
+-Create a link on your site to access the credits page.
 
 <a href="<?php echo url('/credits'); ?>">Credits</a>
