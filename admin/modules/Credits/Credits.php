@@ -64,9 +64,9 @@ class Credits extends CodonModule    {
             }
         
         CreditsData::save_new_credit($credit['name'],
-                                    $credit['link'],
                                     $credit['description'],
                                     $credit['image'],
+                                    $credit['link'],
                                     $credit['active']);
 
         $this->home();
