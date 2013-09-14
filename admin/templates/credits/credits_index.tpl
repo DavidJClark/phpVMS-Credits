@@ -20,7 +20,7 @@
             {$status = 'Inactive';}
             echo '<tr>';
             if($credit->image != '')
-            {echo '<td><img src="'.$credit->image.'" alt="'.$credit->name.'" /></td>';}
+            {echo '<td><img src="'.$credit->image.'" alt="'.$credit->name.'" style="max-height: 100px; max-width: 200px;" /></td>';}
             else
             {echo '<td>No Image</td>';}
             echo '<td>'.$credit->name.'</td>';
