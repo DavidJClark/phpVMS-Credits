@@ -4,7 +4,7 @@ class Credits extends CodonModule    {
 
     public function HTMLHead()
     {
-        $this->set('sidebar', 'credits/sidebar_credits');
+        $this->set('sidebar', 'credits/sidebar_credits.php');
     }
 
     public function NavBar()
