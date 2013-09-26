@@ -4,7 +4,7 @@ class Credits extends CodonModule    {
 
     public function HTMLHead()
     {
-        $this->set('sidebar', 'credits/sidebar_credits.tpl');
+        $this->set('sidebar', 'credits/sidebar_credits');
     }
 
     public function NavBar()
@@ -34,13 +34,13 @@ class Credits extends CodonModule    {
 
     public function home() {
         $this->set('credits', CreditsData::get_all_credits());
-        $this->show('credits/credits_header.tpl');
-        $this->show('credits/credits_index.tpl');
+        $this->show('credits/credits_header');
+        $this->show('credits/credits_index');
     }
 
     public function create()    {
-        $this->show('credits/credits_header.tpl');
-        $this->show('credits/credit_create.tpl');
+        $this->show('credits/credits_header');
+        $this->show('credits/credit_create');
     }
 
     protected function save_new_credit()
@@ -58,8 +58,8 @@ class Credits extends CodonModule    {
             {
                 $this->set('error', TRUE);
                 $this->set('credit', $credit);
-                $this->show('credits/credits_header.tpl');
-                $this->show('credits/credit_create.tpl');
+                $this->show('credits/credits_header');
+                $this->show('credits/credit_create');
                 return;
             }
         
@@ -74,8 +74,8 @@ class Credits extends CodonModule    {
 
     public function edit_credit($id)  {
         $this->set('credit', CreditsData::get_credit($id));
-        $this->show('credits/credits_header.tpl');
-        $this->show('credits/credits_edit.tpl');
+        $this->show('credits/credits_header');
+        $this->show('credits/credits_edit');
     }
 
     protected function save_edit_credit()
@@ -94,8 +94,8 @@ class Credits extends CodonModule    {
             {
                 $this->set('error', TRUE);
                 $this->set('credit', $credit);
-                $this->show('credits/credits_header.tpl');
-                $this->show('credits/credit_create.tpl');
+                $this->show('credits/credits_header');
+                $this->show('credits/credit_create');
                 return;
             }
 

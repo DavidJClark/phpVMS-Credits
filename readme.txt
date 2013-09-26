@@ -1,4 +1,4 @@
-Credits 1.0
+Credits 2.0
 
 phpVMS module to create a credits page for your phpVMS based virtual airline.
 
@@ -11,10 +11,10 @@ www.simpilotgroup.com
 www.david-clark.net
 
 Developed on:
-phpVMS v2.1.934-158
-php 5.3.4
-mysql 5.0.7
-apache 2.2.17
+phpVMS v-dev
+php 5.3.13
+mysql 5.5.24
+apache 2.2.22
 
 Install Using Simpilotgroup Plugin Manager
 
